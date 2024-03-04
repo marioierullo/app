@@ -27,7 +27,7 @@ const TEST_COMMAND = {
 // Command containing options
 const CHALLENGE_COMMAND = {
   name: 'challenge',
-  description: 'Desafio a un duelo a Los Tres Grandes',
+  description: 'Desafio de duelo <Los 3 Grandes>',
   options: [
     {
       type: 3,
