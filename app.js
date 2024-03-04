@@ -111,6 +111,7 @@ app.post('/interactions', async function (req, res) {
                 components: [
                   {
                     type: MessageComponentTypes.STRING_SELECT,
+                    placeholder: 'Elija su objeto',
                     // Append game ID
                     custom_id: `select_choice_${gameId}`,
                     options: getShuffledOptions(),
