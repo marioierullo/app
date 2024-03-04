@@ -26,13 +26,13 @@ const TEST_COMMAND = {
 
 // Command containing options
 const CHALLENGE_COMMAND = {
-  name: 'challenge',
-  description: 'Challenge to a match of rock paper scissors',
+  name: 'Desafio',
+  description: 'Desafio a un duelo de Los Tres Grandes',
   options: [
     {
       type: 3,
-      name: 'object',
-      description: 'Pick your object',
+      name: 'objeto',
+      description: 'Elija su objeto',
       required: true,
       choices: createCommandChoices(),
     },
