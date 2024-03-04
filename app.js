@@ -48,7 +48,7 @@ app.post('/interactions', async function (req, res) {
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
         data: {
           // Fetches a random emoji to send from a helper function
-          content: 'hello world ' + getRandomEmoji(),
+          content: 'Su mensaje fue recibido ' + getRandomEmoji(),
         },
       });
     }
@@ -113,6 +113,7 @@ app.post('/interactions', async function (req, res) {
                     type: MessageComponentTypes.STRING_SELECT,
                     // Append game ID
                     custom_id: `select_choice_${gameId}`,
+                    label: 'Haga su seleccion',
                     options: getShuffledOptions(),
                   },
                 ],
