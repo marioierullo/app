@@ -42,7 +42,7 @@ app.post('/interactions', async function (req, res) {
     const { name } = data;
 
     // "test" command
-    if (name === 'test') {
+    if (name === 'prueba') {
       // Send a message into the channel where command was triggered from
       return res.send({
         type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
@@ -54,7 +54,7 @@ app.post('/interactions', async function (req, res) {
     }
     
     // "challenge" command
-    if (name === 'challenge' && id) {
+    if (name === 'desafio' && id) {
         const userId = req.body.member.user.id;
         // User's object choice
         const objectName = req.body.data.options[0].value;
@@ -113,7 +113,6 @@ app.post('/interactions', async function (req, res) {
                     type: MessageComponentTypes.STRING_SELECT,
                     // Append game ID
                     custom_id: `select_choice_${gameId}`,
-                    label: 'Haga su seleccion',
                     options: getShuffledOptions(),
                   },
                 ],

@@ -19,14 +19,14 @@ function createCommandChoices() {
 
 // Simple test command
 const TEST_COMMAND = {
-  name: 'test',
+  name: 'prueba',
   description: 'Basic command',
   type: 1,
 };
 
 // Command containing options
 const CHALLENGE_COMMAND = {
-  name: 'challenge',
+  name: 'desafio',
   description: 'Desafio de duelo <Los 3 Grandes>',
   options: [
     {
