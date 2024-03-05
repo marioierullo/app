@@ -1,0 +1,14 @@
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
+npm run register
