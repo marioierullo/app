@@ -156,7 +156,7 @@ app.post('/interactions', async function (req, res) {
           await DiscordRequest(endpoint, {
             method: 'PATCH',
             body: {
-            content: 'Buen intento ' + getRandomEmoji(),
+            content: 'Ahi va.... Suerte ' + getRandomEmoji(),
             components: []
             }
           });

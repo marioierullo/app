@@ -31,7 +31,7 @@ function formatResult(result) {
   const { win, lose, verb } = result;
   return verb === 'tie'
     ? `<@${win.id}> y <@${lose.id}> eligieron **${win.objectName}**, intentan de nuevo`
-    : `<@${win.id}>'s **${win.objectName}** ${verb} <@${lose.id}>'s **${lose.objectName}**`;
+    : `**${win.objectName}** de <@${win.id}> ${verb} **${lose.objectName}** de <@${lose.id}>`;
 }
 
 // this is just to figure out winner + verb
