@@ -12,8 +12,8 @@ import { getShuffledOptions, getResult } from './game.js';
 
 // Create an express app
 const app = express();
-// Get port, or default to 3000
-const PORT = process.env.PORT || 3000;
+// Get port
+const port = process.env.PORT;
 // Parse request body and verifies incoming requests using discord-interactions package
 app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
 
@@ -168,6 +168,6 @@ app.post('/interactions', async function (req, res) {
   }
 });
 
-app.listen(PORT, () => {
-  console.log('Listening on port', PORT);
+app.listen(port, () => {
+  console.log('Listening on port', port);
 });
